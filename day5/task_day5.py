@@ -19,7 +19,7 @@ t2=("A","B")
 xlist=[
     t1.__getitem__(0),
     t2.__getitem__(-1),
-    (ylist := list(t1), ylist.__setitem__(3, "Program"), tuple(ylist))[2],
+    (ylist := list(t1), ylist.__setitem__(ylist.index("Code"), "Program"), tuple(ylist))[2],
     [f"{a}|{b}|{c}|{d}" for a,b,c,d in [t1]][0],
     t3:= (t1+t2),
     t3[1:4],
