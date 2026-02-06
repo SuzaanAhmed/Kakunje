@@ -112,9 +112,9 @@ xlist_D = [
     [D[1][:3], D[3][:3]],                                                       
     [D[i][i] for i in range(5)],                                                
     [D[i][4-i] for i in range(5)],                                              
-    [[D[i][j] for j in [0, 2, 4]] for i in [0, 2, 4]],                          
-    [D[1][4], D[2][4], D[3][4]],                                                
-    [D[1][2:4], D[3][2:4]],                                                     
+    [[D[i][j] for j in [0, 2, 4]] for i in [0, 2, 4]],
+    [D[i][4] for i in range(1,4)],                              
+    [D[i][2:4] for i in range(1,4,2)],                                          
     D[4],                                                                       
     [D[i][1:4:2] for i in [0, 2, 4]]                                            
 ]
