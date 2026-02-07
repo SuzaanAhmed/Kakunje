@@ -31,3 +31,6 @@ MatB=[
     [5, 6], 
     [3, 4]
     ]
+
+stringA="hello world"
+print(stringA[:4:-1])
